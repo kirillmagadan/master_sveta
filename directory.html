@@ -20,9 +20,10 @@
     <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script>
     <![endif]-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,300,300italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script type='text/javascript' src='js/jquery.smslider.min.js'></script>
     <script type='text/javascript' src='js/jquery.fancybox.pack.js'></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script type='text/javascript' src='js/main.js'></script>
 </head>
 <body>
@@ -116,10 +117,20 @@
             </ul>
         </div>
 
-        <p class="sort_by">Сортировать по:<a href="#" title="">по цене</a> <span><a href="#" title="">по популярности</a></span> <a href="#" title="">по скидке</a></p>
+        <p class="sort_by">Сортировать по:<a  href="#" title="">по цене</a><a class="active_directory" href="#" title="">по популярности</a> <a class="static_directory" href="#" title="">по скидке</a></p>
         <div class="directory_items_wrapper">
             <aside>
-
+                <div class="filter_aside_directory">
+                  <h5 class="filter_aside_h5">Фильтровать по:</h5>
+                    <p class="filter_price_directory">ЦЕНА</p>
+                    <div id="slider-range"></div>
+                    <p class="filter_price_from">от 1000 руб.</p>
+                    <p class="filter_price_to" >до 39000 руб.</p>
+                    <div class="clear"></div>
+                    <span class="dial_filter_aside">3500</span>
+                    <span class="dial_filter_aside">12000</span>
+                    <p class="filter_price_directory">Название фильтра</p>
+                </div>
             </aside>
             <section>
                 <div class="directory_new_product_item">
@@ -130,9 +141,9 @@
                                 LivingLight TTHI SET</a>
                             <p>Этот светильник особенно
                                 хорошо смотрится в группе</p>
-                            <p><span class="price_discount">29900.-</span></p>
-                            <p class="directory_new_product_item_discount">49900.- </p>
-                            <div class="bth_hover_basket">
+                            <p><span class="price_discount_directory">12900.-</span></p>
+                            <p class="directory_new_product_item_discount">18900.-</p>
+                            <div class="bth_hover_basket directory_hover_basket">
                                 <p>Наличие</p>
                                 <a href="#" title="" >Самовывоз из 4 точек</a>
                                 <a href="#" title="" class="in_basket">В корзину</a>
@@ -142,14 +153,86 @@
                 </div>
                 <div class="directory_new_product_item">
                     <div class="directory_new_product_item_container">
-                        <a href="#" alt=""> <img src="img/directory.png" alt=""></a>
-                        <div class="main_new_product_info">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
                             <a href="#" title="" >Тканевые светильники
                                 LivingLight TTHI SET</a>
                             <p>Этот светильник особенно
                                 хорошо смотрится в группе</p>
-                            <p><span class="price">8900.-</span></p>
-                            <div class="bth_hover_ordering">
+                            <p><span class="price_directory">29900.-</span></p>
+                            <div class="bth_hover_ordering bth_hover_ordering_directory">
+                                <p>Наличие</p>
+                                <p><span>Нет в наличии</span></p>
+                                <a href="#" title="" class="under_ordering_orange">Под заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="directory_new_product_item">
+                    <div class="directory_new_product_item_container">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
+                            <a href="#" title="" >Тканевые светильники
+                                LivingLight TTHI SET</a>
+                            <p>Этот светильник особенно
+                                хорошо смотрится в группе</p>
+                            <p><span class="price_directory">29900.-</span></p>
+                            <div class="bth_hover_ordering bth_hover_ordering_directory">
+                                <p>Наличие</p>
+                                <p><span>Нет в наличии</span></p>
+                                <a href="#" title="" class="under_ordering_orange">Под заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="directory_new_product_item">
+                    <div class="directory_new_product_item_container">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
+                            <a href="#" title="" >Тканевые светильники
+                                LivingLight TTHI SET</a>
+                            <p>Этот светильник особенно
+                                хорошо смотрится в группе</p>
+                            <p><span class="price_discount_directory">12900.-</span></p>
+                            <p class="directory_new_product_item_discount">18900.-</p>
+                            <div class="bth_hover_basket directory_hover_basket">
+                                <p>Наличие</p>
+                                <a href="#" title="" >Самовывоз из 4 точек</a>
+                                <a href="#" title="" class="in_basket">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="directory_new_product_item">
+                    <div class="directory_new_product_item_container">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
+                            <a href="#" title="" >Тканевые светильники
+                                LivingLight TTHI SET</a>
+                            <p>Этот светильник особенно
+                                хорошо смотрится в группе</p>
+                            <p><span class="price_directory">29900.-</span></p>
+                            <div class="bth_hover_ordering bth_hover_ordering_directory">
+                                <p>Наличие</p>
+                                <p><span>Нет в наличии</span></p>
+                                <a href="#" title="" class="under_ordering_orange">Под заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="directory_new_product_item">
+                    <div class="directory_new_product_item_container">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
+                            <a href="#" title="" >Тканевые светильники
+                                LivingLight TTHI SET</a>
+                            <p>Этот светильник особенно
+                                хорошо смотрится в группе</p>
+                            <p><span class="price_directory">29900.-</span></p>
+                            <div class="bth_hover_ordering bth_hover_ordering_directory">
                                 <p>Наличие</p>
                                 <p><span>Нет в наличии</span></p>
                                 <a href="#" title="" class="under_ordering_orange">Под заказ</a>
@@ -159,14 +242,32 @@
                 </div>
                 <div class="directory_new_product_item">
                     <div class="directory_new_product_item_container">
-                        <a href="#" alt=""> <img src="img/directory.png" alt=""></a>
-                        <div class="main_new_product_info">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
                             <a href="#" title="" >Тканевые светильники
                                 LivingLight TTHI SET</a>
                             <p>Этот светильник особенно
                                 хорошо смотрится в группе</p>
-                            <p><span class="price">8900.-</span></p>
-                            <div class="bth_hover_ordering">
+                            <p><span class="price_discount_directory">12900.-</span></p>
+                            <p class="directory_new_product_item_discount">18900.-</p>
+                            <div class="bth_hover_basket directory_hover_basket">
+                                <p>Наличие</p>
+                                <a href="#" title="" >Самовывоз из 4 точек</a>
+                                <a href="#" title="" class="in_basket">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="directory_new_product_item">
+                    <div class="directory_new_product_item_container">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
+                            <a href="#" title="" >Тканевые светильники
+                                LivingLight TTHI SET</a>
+                            <p>Этот светильник особенно
+                                хорошо смотрится в группе</p>
+                            <p><span class="price_directory">29900.-</span></p>
+                            <div class="bth_hover_ordering bth_hover_ordering_directory">
                                 <p>Наличие</p>
                                 <p><span>Нет в наличии</span></p>
                                 <a href="#" title="" class="under_ordering_orange">Под заказ</a>
@@ -175,7 +276,129 @@
                     </div>
                 </div>
 
-            </div>
+                <div class="directory_new_product_item">
+                    <div class="directory_new_product_item_container">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
+                            <a href="#" title="" >Тканевые светильники
+                                LivingLight TTHI SET</a>
+                            <p>Этот светильник особенно
+                                хорошо смотрится в группе</p>
+                            <p><span class="price_directory">29900.-</span></p>
+                            <div class="bth_hover_ordering bth_hover_ordering_directory">
+                                <p>Наличие</p>
+                                <p><span>Нет в наличии</span></p>
+                                <a href="#" title="" class="under_ordering_orange">Под заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="directory_new_product_item">
+                    <div class="directory_new_product_item_container">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
+                            <a href="#" title="" >Тканевые светильники
+                                LivingLight TTHI SET</a>
+                            <p>Этот светильник особенно
+                                хорошо смотрится в группе</p>
+                            <p><span class="price_discount_directory">12900.-</span></p>
+                            <p class="directory_new_product_item_discount">18900.-</p>
+                            <div class="bth_hover_basket directory_hover_basket">
+                                <p>Наличие</p>
+                                <a href="#" title="" >Самовывоз из 4 точек</a>
+                                <a href="#" title="" class="in_basket">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="directory_new_product_item">
+                    <div class="directory_new_product_item_container">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
+                            <a href="#" title="" >Тканевые светильники
+                                LivingLight TTHI SET</a>
+                            <p>Этот светильник особенно
+                                хорошо смотрится в группе</p>
+                            <p><span class="price_directory">29900.-</span></p>
+                            <div class="bth_hover_ordering bth_hover_ordering_directory">
+                                <p>Наличие</p>
+                                <p><span>Нет в наличии</span></p>
+                                <a href="#" title="" class="under_ordering_orange">Под заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="directory_new_product_item">
+                    <div class="directory_new_product_item_container">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
+                            <a href="#" title="" >Тканевые светильники
+                                LivingLight TTHI SET</a>
+                            <p>Этот светильник особенно
+                                хорошо смотрится в группе</p>
+                            <p><span class="price_directory">29900.-</span></p>
+                            <div class="bth_hover_ordering bth_hover_ordering_directory">
+                                <p>Наличие</p>
+                                <p><span>Нет в наличии</span></p>
+                                <a href="#" title="" class="under_ordering_orange">Под заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="directory_new_product_item">
+                    <div class="directory_new_product_item_container">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
+                            <a href="#" title="" >Тканевые светильники
+                                LivingLight TTHI SET</a>
+                            <p>Этот светильник особенно
+                                хорошо смотрится в группе</p>
+                            <p><span class="price_discount_directory">12900.-</span></p>
+                            <p class="directory_new_product_item_discount">18900.-</p>
+                            <div class="bth_hover_basket directory_hover_basket">
+                                <p>Наличие</p>
+                                <a href="#" title="" >Самовывоз из 4 точек</a>
+                                <a href="#" title="" class="in_basket">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="directory_new_product_item">
+                    <div class="directory_new_product_item_container">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
+                            <a href="#" title="" >Тканевые светильники
+                                LivingLight TTHI SET</a>
+                            <p>Этот светильник особенно
+                                хорошо смотрится в группе</p>
+                            <p><span class="price_directory">29900.-</span></p>
+                            <div class="bth_hover_ordering bth_hover_ordering_directory">
+                                <p>Наличие</p>
+                                <p><span>Нет в наличии</span></p>
+                                <a href="#" title="" class="under_ordering_orange">Под заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="directory_new_product_item">
+                    <div class="directory_new_product_item_container">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
+                            <a href="#" title="" >Тканевые светильники
+                                LivingLight TTHI SET</a>
+                            <p>Этот светильник особенно
+                                хорошо смотрится в группе</p>
+                            <p><span class="price_directory">29900.-</span></p>
+                            <div class="bth_hover_ordering bth_hover_ordering_directory">
+                                <p>Наличие</p>
+                                <p><span>Нет в наличии</span></p>
+                                <a href="#" title="" class="under_ordering_orange">Под заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <div class="clear"></div>
         </div>
