@@ -1530,6 +1530,51 @@ p.sort_by a.static_directory:after{
 
 }
 
+/*---pagination---*/
+ul.pagination{
+    margin: 0;
+
+
+}
+
+ul.pagination li{
+    margin: 0;
+    position: relative;
+}
+
+
+ul.pagination li.pagination_el a{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    margin:0 10px 0 0 ;
+    background: #79b021;
+    padding: 10px 15px;
+
+}
+
+ul.pagination li.pagination_el span{
+    font-size:13px;
+    font-weight: bold;
+    display: inline-block;
+    color: #FFFFFF;
+    margin: 0 7px 0 0;
+    background: #608821;
+    border: 1px solid #83b6cc;
+    position: absolute;
+    top: -1px;
+    padding: 10px 15px;
+}
+
+ul.pagination li.pagination_dotted a{
+    color: #000000;
+    background: #FFFFFF;
+    padding: 10px 5px;
+}
+
+
+
 aside{
     float: left;
     width: 289px;
@@ -1558,6 +1603,75 @@ p.filter_price_directory{
     text-transform: uppercase;
 }
 
+.form_aside_container{
+    margin:0 auto;
+}
+
+.checkbox_container{
+    margin-left: 10px;
+}
+
+form input[type='checkbox'].nice_checkbox{
+    display: none;
+}
+
+form input[type='checkbox'].nice_checkbox:checked + label:before{
+    content: "";
+    color: #979797;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+    width: 16px;
+    height: 16px;
+    background:url("../img/chek.png") no-repeat  center;
+}
+
+form label{
+    display: block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 15px;
+    margin-bottom:22px;
+    color: #21272c;
+
+}
+
+form label:before{
+    content: "";
+    border-radius: 2px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 15px;
+    padding-left: 1px;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    border: 2px solid #979797;
+}
+
+form input[type="submit"].green_btn_form{
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding:12px 27px ;
+    background: #79b021;
+    border: none;
+    margin: 10px 0 20px 0;
+    cursor: pointer;
+}
+
+form input[type="reset"]{
+    background: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #79b021;
+    border: none;
+    cursor: pointer;
+
+}
 section{
     float: right;
     border-bottom: 1px solid #e6e0e2;
@@ -1780,10 +1894,13 @@ span.dial_filter_aside{
     background: #666666 none repeat scroll 0 0;
     border-radius: 4px;
     color: #ffffff;
-
+    position:absolute;
     font-size: 12px;
     padding: 4px 4px 6px;
-    position: relative;
+    top:-35px;
+    left: 50%;
+    min-width: 21px;
+    text-align: center;
 }
 
 span.dial_filter_aside:after{

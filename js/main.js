@@ -12,19 +12,40 @@ $(document).ready(function(){
     // fancy
     $('.fancy').fancybox();*/
 
-    $(function() {
         $( "#slider-range" ).slider({
             range: true,
             min: 0,
-            max: 500,
-            values: [ 75, 300 ],
+            max: 10000,
+            values: [ 1000, 5000 ],
+            create: function( event, ui ) {
+                $(".ui-slider-handle").eq(0).html('<span class="dial_filter_aside">'+$( "#slider-range" ).slider( "values", 0 )+'</span>');
+                $(".ui-slider-handle").eq(1).html('<span class="dial_filter_aside">'+$( "#slider-range" ).slider( "values", 1 )+'</span>');
+
+                $(".dial_filter_aside").each(function(index){
+                    var m_left = "-"+parseInt($(this).css("width"))/1.7;
+                    $(this).css("margin-left", m_left+"px");
+
+                });
+            },
             slide: function( event, ui ) {
-                $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+
+                $(".ui-slider-handle").eq(0).children("span").text(ui.values[ 0 ]);
+                $(".ui-slider-handle").eq(1).children("span").text(ui.values[ 1 ]);
+
+                $(".dial_filter_aside").each(function(index){
+                    var m_left = "-"+parseInt($(this).css("width"))/1.7;
+                    $(this).css("margin-left", m_left+"px");
+
+                });
             }
+
         });
-        $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-            " - $" + $( "#slider-range" ).slider( "values", 1 ) );
-    });
+
+
+
+
+
+
 
 
 });

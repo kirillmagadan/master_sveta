@@ -122,70 +122,33 @@
             <aside>
                 <div class="filter_aside_directory">
                   <h5 class="filter_aside_h5">Фильтровать по:</h5>
-                    <p class="filter_price_directory">ЦЕНА</p>
-                    <div id="slider-range"></div>
-                    <p class="filter_price_from">от 1000 руб.</p>
-                    <p class="filter_price_to" >до 39000 руб.</p>
-                    <div class="clear"></div>
-                    <span class="dial_filter_aside">3500</span>
-                    <span class="dial_filter_aside">12000</span>
-                    <p class="filter_price_directory">Название фильтра</p>
+                    <form>
+                        <p class="filter_price_directory">ЦЕНА</p>
+                        <div id="slider-range"></div>
+                        <p class="filter_price_from">от 1000 руб.</p>
+                        <p class="filter_price_to" >до 39000 руб.</p>
+                        <div class="clear"></div>
+                        <p class="filter_price_directory">Название фильтра</p>
+                            <div class="checkbox_container">
+                                <input class="nice_checkbox" type="checkbox" name="#"value="Италия" id="gray_checkbox"><label for="gray_checkbox">Италия</label>
+                                <input class="nice_checkbox" type="checkbox" name="#"value="Испания" id="spanish"><label for="spanish">Испания</label>
+                                <input class="nice_checkbox" type="checkbox" name="#"value="Бельгия" id="belgium"><label for="belgium">Бельгия</label>
+                                <input class="nice_checkbox" type="checkbox" name="#"value="Германия" id="german"><label for="german">Германия</label>
+                                <input class="nice_checkbox" type="checkbox" name="#"value="Нидерланды" id="holland"><label for="holland">Нидерланды</label>
+                                <input class="nice_checkbox" type="checkbox" name="#"value="Чехия" id="czech"><label for="czech">Чехия</label>
+                                <input class="nice_checkbox" type="checkbox" name="#"value="Какой-то параметр" id="parameter"><label for="parameter">Какой-то параметр</label>
+                                <input class="nice_checkbox" type="checkbox" name="#"value="Другой параметр" id="another_parameter"><label for="another_parameter">Другой параметр</label>
+                                <input class="nice_checkbox" type="checkbox" name="#"value="Третий параметр и т.д." id="third_parameter"><label for="third_parameter">Третий параметр и т.д.</label>
+                                <input class="nice_checkbox" type="checkbox" name="#"value="Какой-то параметр" id="parameter2"><label for="parameter2">Какой-то параметр</label>
+                                <input class="nice_checkbox" type="checkbox" name="#"value="Другой параметр" id="another_parameter2"><label for="another_parameter2">Другой параметр</label>
+                                <input class="nice_checkbox" type="checkbox" name="#"value="Третий параметр и т.д." id="third_parameter2"><label for="third_parameter2">Третий параметр и т.д.</label>
+                            </div>
+                            <input class="green_btn_form" type="submit" name="#" value="Подобрать ( 3948 )">
+                        <input type="reset" value="Сбросить фильтры">
+                    </form>
                 </div>
             </aside>
             <section>
-                <div class="directory_new_product_item">
-                    <div class="directory_new_product_item_container">
-                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
-                        <div class="directory_new_product_info">
-                            <a href="#" title="" >Тканевые светильники
-                                LivingLight TTHI SET</a>
-                            <p>Этот светильник особенно
-                                хорошо смотрится в группе</p>
-                            <p><span class="price_discount_directory">12900.-</span></p>
-                            <p class="directory_new_product_item_discount">18900.-</p>
-                            <div class="bth_hover_basket directory_hover_basket">
-                                <p>Наличие</p>
-                                <a href="#" title="" >Самовывоз из 4 точек</a>
-                                <a href="#" title="" class="in_basket">В корзину</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="directory_new_product_item">
-                    <div class="directory_new_product_item_container">
-                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
-                        <div class="directory_new_product_info">
-                            <a href="#" title="" >Тканевые светильники
-                                LivingLight TTHI SET</a>
-                            <p>Этот светильник особенно
-                                хорошо смотрится в группе</p>
-                            <p><span class="price_directory">29900.-</span></p>
-                            <div class="bth_hover_ordering bth_hover_ordering_directory">
-                                <p>Наличие</p>
-                                <p><span>Нет в наличии</span></p>
-                                <a href="#" title="" class="under_ordering_orange">Под заказ</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="directory_new_product_item">
-                    <div class="directory_new_product_item_container">
-                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
-                        <div class="directory_new_product_info">
-                            <a href="#" title="" >Тканевые светильники
-                                LivingLight TTHI SET</a>
-                            <p>Этот светильник особенно
-                                хорошо смотрится в группе</p>
-                            <p><span class="price_directory">29900.-</span></p>
-                            <div class="bth_hover_ordering bth_hover_ordering_directory">
-                                <p>Наличие</p>
-                                <p><span>Нет в наличии</span></p>
-                                <a href="#" title="" class="under_ordering_orange">Под заказ</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div class="directory_new_product_item">
                     <div class="directory_new_product_item_container">
@@ -240,6 +203,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="directory_new_product_item">
                     <div class="directory_new_product_item_container">
                         <a href="#" title=""> <img src="img/directory.png" alt=""></a>
@@ -399,9 +363,76 @@
                         </div>
                     </div>
                 </div>
+                <div class="directory_new_product_item">
+                    <div class="directory_new_product_item_container">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
+                            <a href="#" title="" >Тканевые светильники
+                                LivingLight TTHI SET</a>
+                            <p>Этот светильник особенно
+                                хорошо смотрится в группе</p>
+                            <p><span class="price_discount_directory">12900.-</span></p>
+                            <p class="directory_new_product_item_discount">18900.-</p>
+                            <div class="bth_hover_basket directory_hover_basket">
+                                <p>Наличие</p>
+                                <a href="#" title="" >Самовывоз из 4 точек</a>
+                                <a href="#" title="" class="in_basket">В корзину</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="directory_new_product_item">
+                    <div class="directory_new_product_item_container">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
+                            <a href="#" title="" >Тканевые светильники
+                                LivingLight TTHI SET</a>
+                            <p>Этот светильник особенно
+                                хорошо смотрится в группе</p>
+                            <p><span class="price_directory">29900.-</span></p>
+                            <div class="bth_hover_ordering bth_hover_ordering_directory">
+                                <p>Наличие</p>
+                                <p><span>Нет в наличии</span></p>
+                                <a href="#" title="" class="under_ordering_orange">Под заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="directory_new_product_item">
+                    <div class="directory_new_product_item_container">
+                        <a href="#" title=""> <img src="img/directory.png" alt=""></a>
+                        <div class="directory_new_product_info">
+                            <a href="#" title="" >Тканевые светильники
+                                LivingLight TTHI SET</a>
+                            <p>Этот светильник особенно
+                                хорошо смотрится в группе</p>
+                            <p><span class="price_directory">29900.-</span></p>
+                            <div class="bth_hover_ordering bth_hover_ordering_directory">
+                                <p>Наличие</p>
+                                <p><span>Нет в наличии</span></p>
+                                <a href="#" title="" class="under_ordering_orange">Под заказ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul class="pagination">
+                    <li class="pagination_el"><a href="#" title="">Пред.</a>  </li>
+                    <li class="pagination_el"><a href="#" title="" >1</a></li>
+                    <li class="pagination_el selected_number"><span>2</span></li>
+                    <li class="pagination_el"><a href="#" title="" >3</a></li>
+                    <li class="pagination_el"><a href="#" title="" >4</a></li>
+                    <li class="pagination_el"><a href="#" title="" >5</a></li>
+                    <li class="pagination_el pagination_dotted"><a href="#" title="" >. . .</a></li>
+                    <li class="pagination_el"><a href="#" title="" >19</a></li>
+                    <li class="pagination_el"><a href="#" title="">След.</a></li>
+
+                </ul>
             </section>
+
             <div class="clear"></div>
         </div>
+
     </div>
 
     <div class="psevdofooter"></div>
