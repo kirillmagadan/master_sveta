@@ -1525,50 +1525,52 @@ p.sort_by a.static_directory:after{
 
 .directory_items_wrapper{
     width: 1178px;
-    margin:50px auto 25px;
+    margin:50px auto 0;
     padding-bottom:70px ;
 
 }
 
 /*---pagination---*/
 ul.pagination{
-    margin: 0;
-
-
+    margin: 0 0 0 7px;
 }
 
 ul.pagination li{
     margin: 0;
-    position: relative;
 }
 
+ul.pagination li>a:hover{
+    text-decoration: none;
+}
 
 ul.pagination li.pagination_el a{
     display: inline-block;
     font-size: 13px;
     font-weight: bold;
-    color: #fff;
-    margin:0 10px 0 0 ;
+    color: #c9edff;
+    margin:0 5px 0 0 ;
     background: #79b021;
     padding: 10px 15px;
 
 }
 
-ul.pagination li.pagination_el span{
-    font-size:13px;
-    font-weight: bold;
-    display: inline-block;
-    color: #FFFFFF;
-    margin: 0 7px 0 0;
-    background: #608821;
+ul.pagination li.selected_number a{
+    background: #608821 none repeat scroll 0 0;
     border: 1px solid #83b6cc;
-    position: absolute;
-    top: -1px;
+    color: #c9edff;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+    margin: -1px 5px 0 0;
     padding: 10px 15px;
 }
 
+ul.pagination li.border_blue a{
+    border: 1px solid #c9edff;
+}
+
 ul.pagination li.pagination_dotted a{
-    color: #000000;
+    color: #c9edff;
     background: #FFFFFF;
     padding: 10px 5px;
 }
@@ -1674,8 +1676,13 @@ form input[type="reset"]{
 }
 section{
     float: right;
-    border-bottom: 1px solid #e6e0e2;
     width: 867px;
+}
+
+.section_directory_new_product_wrapper{
+    border-bottom: 1px solid #e6e0e2;
+    margin-bottom: 25px;
+
 }
 
 .directory_new_product_item{
@@ -1928,11 +1935,151 @@ p.filter_price_to{
     color: #4e4e4e;
     font-size: 12px;
 }
+
+
+/*--contacts--*/
+.contacts_requisite_wrapper{
+    width: 1204px;
+    margin:0 auto;
+}
+
+h1.contacts_h1{
+    text-transform: none;
+}
+
+.contacts_requisite_container{
+    width: 572px;
+    margin-left: 5px;
+    float: left;
+}
+
+.contacts_requisite_container p{
+    font-size: 14px;
+    color: #000000;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.contacts_address_container p.contacts_address_item{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+p.contacts_phone_number_and_email{
+    font-size: 24px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+p.contacts_phone_number_and_email span{
+    font-size: 16px;
+    display: block;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+p.contacts_phone_number span{
+    display: block;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.contacts_form_container{
+    float: right;
+    width: 570px;
+
+}
+
+h4.container_h4:after{
+    content: "";
+    width: 216px;
+    border:2px solid #777777;
+    margin: 9px 0 22px 0;
+    display: block;
+    text-align: center;
+
+}
+
+.contacts_form_wrapper{
+    width: 560px;
+}
+
+.contacts_form_wrapper form{
+    width: 560px;
+}
+
+.contacts_form_wrapper form p{
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+
+.contacts_form_wrapper form p>span{
+    color: #ff9000;
+    font-size: 14px;
+}
+
+
+.contacts_form_wrapper form input[type='text']{
+    color: #4d4d4d;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-left:10px;
+    width: 99%;
+    height: 38px;
+    border: 1px solid #808080;
+}
+
+
+
+.contacts_form_wrapper form input[type='submit']{
+    background: #79b021;
+    width: 300px;
+    height: 45px;
+    border: none;
+    color:#ffffff;
+    font-size: 16px;
+    padding: 0 10px;
+    cursor: pointer;
+    display: block;
+    margin: 0 0 0 0;
+}
+
+.contacts_form_wrapper form input[type='submit']:hover{
+    background: #608821;
+}
+
+.contacts_form_wrapper form>textarea{
+    resize:none;
+    color: #4d4d4d;
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding-left:10px;
+    width:99%;
+    border: 1px solid #808080;
+}
+
+.contacts_form_wrapper form>p.required_fields{
+    color: #808080;
+    font-weight: normal ;
+    display: block;
+   margin-bottom: 21px;
+}
+
+.map_wrapper{
+    margin: 50px 0 -41px 0
+}
 /*--psevdofooter--*/
 
 .psevdofooter{
     height: 373px;
+
 }
+
+/*--basket--*/
 
 /*--footer--*/
 .footer_wrapper{
