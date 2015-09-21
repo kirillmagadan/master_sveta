@@ -1230,43 +1230,45 @@ a.shipping_method_btn_green:hover {
 
 }
 
-.number_purchases{
-    border: 1px solid #848484;
+form.number_purchases {
     display: inline-block;
-    height: 28px;
-    margin: 8px 0 0 56px;
-    position: relative;
     vertical-align: top;
-    width: 36px;
-
+    position: relative;
+    margin: 7px 0 0 56px;
 }
 
-.number_purchases::before{
+form.number_purchases input[type='text']{
+    border: 1px solid #848484;
+    display: block;
+    height: 28px;
+    width: 36px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+}
+
+form.number_purchases::before{
     background: rgba(0, 0, 0, 0) url("../img/x_black.png") no-repeat scroll 0 0;
     content: "";
     display: block;
     height: 12px;
     left: -23px;
     position: absolute;
-    top: 8px;
+    top: 9px;
     width: 12px;
 }
 
-.number_purchases::after{
-    bottom: 8px;
+form.number_purchases::after{
+    bottom: 10px;
     content: "шт";
     display: inline-block;
     font-size: 14px;
-    left: 42px;
+    left: 45px;
     position: absolute;
 }
 
-.number_purchases p{
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    color: #000000;
-}
 .shipping_method_amount_price_number a{
     font-size: 12px;
     margin-bottom:10px;
@@ -2072,14 +2074,273 @@ h4.container_h4:after{
 .map_wrapper{
     margin: 50px 0 -41px 0
 }
+
+/*--basket--*/
+.your_basket_left{
+    width: 839px;
+    float: left;
+}
+
+
+.your_basket_items:first-child p {
+    color: #2c2c2c;
+    font-size: 13px;
+    line-height: 0;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+p.your_basket_price_top{
+    font-size: 13px;
+    font-weight: normal;
+    display: inline-block;
+    width: 106px;
+    margin-left: 40px;
+    color: #2c2c2c;
+}
+
+.your_basket_items p {
+    margin-bottom: 0;
+    line-height: 0;
+}
+
+.your_basket_items{
+    border-bottom: 1px solid #c1c1c1;
+    padding: 10px;
+
+
+}
+
+.your_basket_items .your_basket_img{
+    display: inline-block;
+    width: 125px;
+    margin-bottom: 0;
+}
+
+.your_basket_items .your_basket_img img{
+    display: block;
+    margin-bottom: 0;
+
+}
+
+.your_basket_items .your_basket_product_description_top{
+    width: 195px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    line-height: 0;
+    display: inline-block;
+}
+
+.your_basket_items .your_basket_product_description_top p{
+    margin-bottom: 0;
+    line-height: 0;
+
+}
+
+.your_basket_items .your_basket_product_description{
+    display: inline-block;
+    width: 195px;
+    margin-left: 30px;
+    vertical-align:top;
+    margin-top: 5px;
+}
+
+.your_basket_items .your_basket_product_description a{
+    color: #000000;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.your_basket_items .your_basket_product_description p{
+    color: #5b5b5b;
+    font-size: 14px;
+    line-height: 1.1;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left;
+}
+
+.your_basket_items .your_basket_price{
+    display: inline-block;
+    width: 106px;
+    margin-left: 40px;
+}
+
+.your_basket_items p.your_basket_price {
+    color: #000;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 800;
+    margin-bottom: 35px;
+    margin-top: 21px;
+    display: inline-block;
+    vertical-align:top;
+}
+
+.your_basket_items p.your_basket_number{
+    display: inline-block;
+    width: 90px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+.your_basket_items a.your_basket_exit{
+    background: url("../img/exit.png") no-repeat;
+    width: 21px;
+    height: 24px;
+    display: inline-block;
+    margin: 10px 0 0 37px;
+    vertical-align: top;
+
+}
+
+.your_basket_product_detail_container_margin-top{
+    margin-top: 35px;
+}
+
+.your_basket_amount_price_number_margin-top{
+    margin-top: 45px;
+}
+
+a.your_basket_items_btn_green {
+    background: #79b021 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 7px 0 8px 5px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    width: 225px;
+    margin-top: 20px;
+}
+
+a.your_basket_items_btn_green:hover {
+    background: #608821;
+
+}
+
+a.your_basket_gray_btn{
+     background: #939393 none repeat scroll 0 0;
+     color: #ffffff;
+     display: block;
+     font-size: 16px;
+     font-weight: bold;
+     margin: 18px 0 50px 10px;
+     padding: 6px 20px;
+     width: 184px;
+
+ }
+
+a.your_basket_gray_btn:hover{
+    text-decoration: none;
+    background: #808080;
+}
+
+h4.basket_interest_h4{
+
+}
+
+h4.basket_interest_h4:after{
+    border: 2px solid #777777;
+    content: "";
+    display: block;
+    margin: 9px 0 45px 0;
+    width: 528px;
+}
+
+.basket_interest_wrapper>.directory_new_product_item{
+    margin-left: 30px;
+}
+
+.basket_interest_wrapper>.directory_new_product_item:first-child{
+    margin-left: 0;
+}
+
+p span.price_discount_directory_color_black{
+    color: #000 !important;
+}
+
+
+h4.basket_service_h4:after{
+    border: 2px solid #777777;
+    content: "";
+    display: block;
+    margin: 9px 0 45px 0;
+    width: 370px;
+}
+
+.basket_service_wrapper{
+    margin-bottom: 50px;
+}
+
+.basket_service_item{
+    width: 265px;
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.basket_service_wrapper .basket_service_item:first-child{
+    margin-left: 0;
+}
+
+.basket_service_item a{
+   margin-bottom: 0;
+}
+
+.basket_service_item a img{
+    width: 100%;
+    margin-bottom:7px;
+}
+
+.basket_service_item_text{
+    width: 205px;
+    margin: auto;
+
+}
+
+p.individual_service{
+    margin-bottom: 22px !important;
+}
+
+.basket_service_item_text p{
+    display: block;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.basket_service_item .basket_service_item_text span{
+    display: block;
+    margin-bottom:20px;
+    line-height: 1.2;
+    font-size: 14px;
+    font-weight: normal;
+    color: #5b5b5b;
+}
+
+p.basket_service_item_text_price{
+    font-size: 30px;
+    color: #000000;
+    font-weight: 800;
+    font-style: italic;
+    display: block;
+    margin-bottom: 0;
+    line-height: 0;
+}
 /*--psevdofooter--*/
 
 .psevdofooter{
     height: 373px;
 
 }
-
-/*--basket--*/
 
 /*--footer--*/
 .footer_wrapper{
