@@ -11,7 +11,7 @@ body{
 
 span, p{
     font-family: 'Open Sans', sans-serif;
-    color: #414141;
+    color: #000;
     font-size: 14px;
     line-height: 1.5;
     margin-bottom: 15px;
@@ -361,7 +361,6 @@ a.main_logo_menu_btn_green{
     padding: 6px 18px;
     position: relative;
     background:#79b021;
-    margin-right: 20px;
 }
 
 
@@ -1615,11 +1614,11 @@ p.filter_price_directory{
     margin-left: 10px;
 }
 
-form input[type='checkbox'].nice_checkbox{
+form .checkbox_container>input[type='checkbox'].nice_checkbox{
     display: none;
 }
 
-form input[type='checkbox'].nice_checkbox:checked + label:before{
+form .checkbox_container>input[type='checkbox'].nice_checkbox:checked + label:before{
     content: "";
     color: #979797;
     font-size: 30px;
@@ -1630,7 +1629,7 @@ form input[type='checkbox'].nice_checkbox:checked + label:before{
     background:url("../img/chek.png") no-repeat  center;
 }
 
-form label{
+form .checkbox_container>label{
     display: block;
     cursor: pointer;
     position: relative;
@@ -1642,7 +1641,7 @@ form label{
 
 }
 
-form label:before{
+form .checkbox_container>label:before{
     content: "";
     border-radius: 2px;
     display: inline-block;
@@ -1667,6 +1666,11 @@ form input[type="submit"].green_btn_form{
     cursor: pointer;
 }
 
+form input[type="submit"].green_btn_form:hover{
+    background: #608821;
+
+}
+
 form input[type="reset"]{
     background: none;
     font-size: 16px;
@@ -1676,6 +1680,12 @@ form input[type="reset"]{
     cursor: pointer;
 
 }
+
+form input[type="reset"]:hover{
+    color: #608821;
+}
+
+
 section{
     float: right;
     width: 867px;
@@ -2334,6 +2344,229 @@ p.basket_service_item_text_price{
     display: block;
     margin-bottom: 0;
     line-height: 0;
+}
+
+/*--personal account--*/
+h1.personal_account_h1{
+    margin-bottom: 40px;
+}
+
+.menu_btn_dotted_wrapper{
+    margin-bottom: 7px;
+}
+
+.menu_btn_dotted_wrapper a{
+    margin-left: 20px ;
+}
+
+.menu_btn_dotted_wrapper a:first-child{
+    margin-left:0;
+}
+
+a.personal_account_logo_menu_btn_green{
+    font-size: 20px;
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 18px;
+    position: relative;
+    background:#79b021;
+
+
+}
+
+
+a.personal_account_logo_menu_btn_green:after{
+    background: rgba(0, 0, 0, 0) url("../img/treugol.png") no-repeat scroll 0 0;
+    bottom: -6px;
+    content: "";
+    display: block;
+    height: 6px;
+    left: 48%;
+    margin: 0 auto;
+    position: absolute;
+    width: 18px;
+}
+
+a.personal_account_logo_menu_btn_dotted{
+    font-size: 20px;
+    color:#ffa958;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+a.personal_account_logo_menu_btn_dotted:after{
+    content: "";
+    display: block;
+    height: 2px;
+    margin: -3px auto 0;
+    width: 167px;
+    border-bottom: 2px dotted #ffa958;
+}
+
+.personal_account_form_wrapper{
+    margin: 40px 0 0 0;
+    width: 870px;
+
+}
+
+.personal_account_input_wrapper{
+    display: inline-block;
+    margin:0 0 25px 30px;
+}
+
+.personal_account_input_wrapper:first-child{
+    margin-left: 0;
+}
+
+.personal_account_input_wrapper:nth-child(3n+1){
+    margin-left: 0;
+}
+
+.personal_account_form_wrapper form .personal_account_input_wrapper label{
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    display: block;
+    margin-bottom: 10px;
+
+}
+
+.personal_account_form_wrapper form .personal_account_input_wrapper label>span{
+    font-size: 14px;
+    font-weight: bold;
+    color: #808080;
+}
+
+
+.personal_account_form_wrapper form .personal_account_input_wrapper p.birthday_p{
+    font-size: 14px;
+    color: #808080;
+    font-weight: normal;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 0;
+    width: 290px;
+}
+
+.personal_account_form_wrapper form .personal_account_input_wrapper input[type="text"]{
+    font-size: 14px;
+    color: #000000;
+    display: block;
+    padding-left:10px;
+    width: 254px;
+    height: 38px;
+    border: 1px solid #808080;
+
+}
+
+.personal_account_btn_form{
+    display: block;
+    margin-top: 0;
+}
+
+/*--news--*/
+.news_wrapper{
+    margin:30px 0 30px 0;
+    border-bottom: 1px solid #e6e0e2;
+
+}
+
+.news_item{
+    width: 1055px;
+    margin-bottom: 50px;
+}
+
+.news_item img{
+    display: block;
+    float: left;
+
+}
+
+.news_item_text_wrapper{
+    width: 746px;
+    float: right;
+    vertical-align: top;
+}
+
+.news_item_text_wrapper p.news_logo_p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    display: block;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.news_item_text_wrapper p{
+    font-size: 14px;
+    color: #000000;
+    display: block;
+    margin-bottom: 30px;
+    line-height: 1.2;
+
+}
+
+.news_item_text_wrapper span{
+    font-size: 14px;
+    color: #808080;
+    display: block;
+    margin-bottom: 20px;
+    line-height: 0;
+}
+
+.news_item_text_wrapper a{
+    font-size: 14px;
+    color: #79b021;
+    display: block;
+    margin-bottom: 0;
+    line-height: 0;
+    text-decoration: underline;
+}
+
+.news_pagination{
+    margin-bottom: 35px !important;
+}
+
+/*--news detail--*/
+span.detail_news_date{
+    font-size: 14px;
+    color: #808080;
+    display: block;
+    margin-bottom: 25px;
+    line-height: 0;
+}
+
+.detail_news_wrapper{
+    margin:0 auto 68px;
+}
+
+.detail_news_img{
+    width: 490px;
+    float: left;
+    margin:0 30px 28px 0 ;
+}
+
+.detail_news_img img{
+    display: inline-block;
+    margin-left:15px ;
+}
+
+.detail_news_img img:first-child{
+    margin-left:0;
+    margin-bottom: 15px;
+}
+
+.detail_news_img img:nth-child(2n){
+    margin-left:0;
+}
+
+a.news_detail_back_a{
+    font-size: 14px;
+    color: #79b021;
+    text-decoration: underline;
 }
 /*--psevdofooter--*/
 
