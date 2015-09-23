@@ -487,6 +487,9 @@ p.main_banner_slider span{
     margin: auto;
 }
 
+.content_wrapper p{
+    line-height: 1.2;
+}
 .main_new_product{
     width: 1204px;
     margin: auto;
@@ -2425,7 +2428,7 @@ a.personal_account_logo_menu_btn_dotted:after{
     margin-left: 0;
 }
 
-.personal_account_form_wrapper form .personal_account_input_wrapper label{
+.personal_account_form_wrapper .personal_account_input_wrapper label{
     font-size: 14px;
     font-weight: bold;
     color: #000000;
@@ -2434,14 +2437,14 @@ a.personal_account_logo_menu_btn_dotted:after{
 
 }
 
-.personal_account_form_wrapper form .personal_account_input_wrapper label>span{
+.personal_account_form_wrapper .personal_account_input_wrapper label>span{
     font-size: 14px;
     font-weight: bold;
     color: #808080;
 }
 
 
-.personal_account_form_wrapper form .personal_account_input_wrapper p.birthday_p{
+.personal_account_form_wrapper .personal_account_input_wrapper p.birthday_p{
     font-size: 14px;
     color: #808080;
     font-weight: normal;
@@ -2451,7 +2454,7 @@ a.personal_account_logo_menu_btn_dotted:after{
     width: 290px;
 }
 
-.personal_account_form_wrapper form .personal_account_input_wrapper input[type="text"]{
+.personal_account_form_wrapper .personal_account_input_wrapper input[type="text"]{
     font-size: 14px;
     color: #000000;
     display: block;
@@ -2540,7 +2543,12 @@ span.detail_news_date{
 }
 
 .detail_news_wrapper{
-    margin:0 auto 68px;
+     margin:0 auto 68px;
+ }
+
+.detail_news_wrapper p{
+    font-size: 14px;
+    line-height: 1.2;
 }
 
 .detail_news_img{
@@ -2567,6 +2575,232 @@ a.news_detail_back_a{
     font-size: 14px;
     color: #79b021;
     text-decoration: underline;
+}
+
+/*--about shops--*/
+.about_shops_img_wrapper{
+    margin:25px 0 15px 0;
+    width: 1176px;
+}
+
+.about_shops_img_left{
+    float: left;
+    width: 570px;
+}
+
+.about_shops_img_left img{
+   display: block;
+    margin-bottom: 30px;
+}
+
+img.about_shops_img_right{
+    float: right;
+    display: block;
+    width: 570px;
+}
+
+/*--checkout--*/
+.checkout_h4:after{
+    content: "";
+    width: 280px;
+    border:2px solid #777777;
+    margin: 9px 0 45px 0;
+    display: block;
+}
+
+
+.radio_btn_h4:after{
+    content: "";
+    width: 140px;
+    border:2px solid #777777;
+    margin: 9px 0 45px 0;
+    display: block;
+}
+
+.checkout_input_radio_wrapper{
+    margin-bottom: 50px;
+    width: 870px;
+    padding-bottom:20px ;
+}
+
+
+.checkout_border-bottom{
+    border-bottom: 1px solid #c1c1c1;
+    margin-bottom: 45px;
+}
+
+.checkout_radio_form input[type='radio']{
+    display: none;
+}
+
+.checkout_radio_form input[type='radio']:checked + label:before{
+    color: #fa8f04;
+    content: "•";
+    font-size: 21px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.checkout_radio_form label{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom:22px;
+}
+
+.checkout_radio_form label:before{
+    border: 1px solid #6a6a6a;
+    border-radius: 20px;
+    bottom: -3px;
+    content: "";
+    display: inline-block;
+    height: 16px;
+    left: 0;
+    margin-right: 15px;
+    padding-left: 0;
+    position: absolute;
+    width: 16px;
+}
+
+.checkout_radio_info{
+    margin: 0 0 30px 63px;
+    width: 375px;
+}
+
+.checkout_radio_info_margin{
+   width:426px ;
+    margin: 0 0 0 20px;
+}
+
+p.checkout_radio_info_date{
+    font-size: 16px;
+    font-weight: bold;
+    color: #808080;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+}
+
+.checkout_radio_info_point{
+    display: inline-block;
+    margin-left: 5px;
+    width: 293px;
+}
+
+.checkout_radio_info_point p span{
+    color: #85a949;
+    font-size: 16px;
+}
+
+.checkout_radio_info_point p{
+    font-size: 16px;
+}
+
+select.amazing_select {
+    border: 1px solid #808080;
+    width: 270px;
+    height: 32px;
+    -webkit-appearance: none;
+    background-image: url('../img/arrow_bottom.png');
+    background-position: 251px center;
+    background-repeat: no-repeat;
+    line-height: 1em;
+    /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
+    color: #000;
+    font-size: 14px;
+    padding-left: 7px;
+    margin: 0 45px 51px 15px;
+}
+
+select.amazing_select option:hover{
+    background: #FFFFFF;
+    color: #79b021;
+}
+
+select.amazing_select::-ms-expand {
+    display: none;
+}
+
+.checkout_select_info{
+    margin:0 0 0 15px ;
+    width:794px ;
+}
+
+.checkout_form_wrapper{
+    margin: 0 0 0 25px;
+
+}
+
+.checkout_form_input_wrapper,.checkout_form_input_wrapper_little{
+    display: inline-block;
+    margin:0 30px 25px  0 ;
+
+}
+
+.checkout_form_input_wrapper p{
+    color: #000000;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 13px;
+}
+
+.checkout_form_input_wrapper p span{
+    color: #111111;
+    font-size: 12px;
+    line-height: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+
+.checkout_form_input_wrapper input[type="text"]{
+    border: 1px solid #808080;
+    color: #000000;
+    display: block;
+    font-size: 14px;
+    height: 38px;
+    padding-left: 10px;
+    width: 254px
+}
+
+.checkout_form_input_wrapper_little p{
+    color: #000000;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 13px;
+}
+
+.checkout_form_input_wrapper_little p span{
+    color: #111111;
+    font-size: 12px;
+    line-height: 0;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+
+.checkout_form_input_wrapper_little input[type="text"]{
+    border: 1px solid #808080;
+    color: #000000;
+    display: block;
+    font-size: 14px;
+    height: 38px;
+    padding-left: 10px;
+    width: 128px
 }
 /*--psevdofooter--*/
 
